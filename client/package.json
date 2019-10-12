@@ -1,8 +1,8 @@
 {
-  "name": "github-finder",
+  "name": "botDisplay/",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://twistedx.github.io/github-finder-vanilla/",
+  "homepage": "https://github.com/twistedx/botDisplay/",
   "dependencies": {
     "axios": "^0.19.0",
     "moment": "^2.24.0",
