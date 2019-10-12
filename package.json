@@ -1,0 +1,33 @@
+{
+  "name": "botdisplay",
+  "version": "1.0.0",
+  "description": "This app was developed with vanilla React.  It will search GitHub users and pull in all matches for the name.  Upon clicking a name it will bring in the specific users information.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "clientinstall": "npn install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twistedx/botDisplay.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/twistedx/botDisplay/issues"
+  },
+  "homepage": "https://github.com/twistedx/botDisplay#readme",
+  "dependencies": {
+    "concurrently": "^5.0.0",
+    "config": "^3.2.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.4",
+    "node": "^12.12.0",
+    "nodemon": "^1.19.3"
+  }
+}
